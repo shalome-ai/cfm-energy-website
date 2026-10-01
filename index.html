@@ -27,7 +27,6 @@
     <nav class="nav" aria-label="Main">
       <a href="#physics">The physics</a>
       <a href="#device">The device</a>
-      <a href="#testing">Testing</a>
       <a href="#roadmap">Status</a>
       <a href="#integrity">Integrity</a>
       <a class="cfm-btn cfm-btn--primary" href="#contact">Request a briefing</a>
@@ -122,43 +121,14 @@
         <li><strong>A tetrahedral gold enclosure</strong>Four faces, six edges, four vertices. A regular tetrahedron has no centre of inversion, which adds a second break in mirror symmetry, and its A₄ rotation group restricts which modes the cavity can support. It also acts as a Faraday cage.</li>
         <li><strong>Two counter-wound spirals</strong>One wound left-handed, one right-handed, interleaved without touching. Together they present different boundary conditions to left- and right-circular modes.</li>
         <li><strong>A golden-ratio pitch</strong>The radius grows by the golden ratio φ every quarter-turn (b = 2ln(φ)/π ≈ 0.3063), so the geometry repeats at every scale and modifies modes across several decades of frequency, not one.</li>
-        <li><strong>Three turns, on a C₃ axis</strong>Each spiral turns exactly three times about the axis through one vertex and the centre of the opposite face: twelve quarter-turns, matching the order of the tetrahedron’s rotation group.</li>
       </ol>
     </div>
 
-    <h3 style="margin:64px 0 24px">Preferred embodiment</h3>
-    <div class="grid g4">
-      <div class="cfm-metric"><p class="cfm-metric__label">Edge length</p><p class="cfm-metric__value">6.5<span class="cfm-metric__unit">cm</span></p><p class="cfm-metric__note">Range 5–10 cm</p></div>
-      <div class="cfm-metric"><p class="cfm-metric__label">Spiral turns</p><p class="cfm-metric__value">3<span class="cfm-metric__unit">each</span></p><p class="cfm-metric__note">12 quarter-turns, 6π rotation</p></div>
-      <div class="cfm-metric"><p class="cfm-metric__label">Scale span</p><p class="cfm-metric__value">φ¹²<span class="cfm-metric__unit">≈ 322</span></p><p class="cfm-metric__note">Innermost to outermost radius</p></div>
-      <div class="cfm-metric"><p class="cfm-metric__label">Gold purity</p><p class="cfm-metric__value">≥99.9<span class="cfm-metric__unit">%</span></p><p class="cfm-metric__note">By mass; Ra ≤ 50 nm</p></div>
-    </div>
-
-    <div class="table-wrap" style="margin-top:32px">
-      <table>
-        <caption>Design values from the specification. These are design targets, not measured results.</caption>
-        <thead><tr><th scope="col">Parameter</th><th scope="col">Preferred value</th><th scope="col">Acceptable range</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Tetrahedral edge length</th><td class="num">6.5 cm</td><td class="num">5 – 10 cm</td></tr>
-          <tr><th scope="row">Enclosure face thickness</th><td class="num">0.4 mm</td><td class="num">0.3 – 0.6 mm</td></tr>
-          <tr><th scope="row">Edge reinforcement rib width</th><td class="num">2 mm</td><td class="num">1 – 3 mm</td></tr>
-          <tr><th scope="row">Shell wall thickness</th><td class="num">0.30 mm</td><td class="num">0.25 – 0.40 mm</td></tr>
-          <tr><th scope="row">Innermost spiral radius</th><td class="num">47 µm</td><td class="num">20 – 200 µm</td></tr>
-          <tr><th scope="row">Surface roughness, inter-shell</th><td class="num">Ra ≤ 50 nm</td><td class="num">Ra ≤ 100 nm</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="grid g3" style="margin-top:48px">
+    <div class="grid g2" style="margin-top:48px">
       <article class="cfm-card">
         <p class="cfm-card__eyebrow">Why gold</p>
         <h3 class="cfm-card__title">A clean boundary</h3>
         <p class="cfm-card__body">High conductivity (about 4.1 × 10⁷ S/m at 293 K) approaches an ideal conducting boundary. Gold electropolishes to a very smooth surface, does not oxidise, and is diamagnetic, so the geometry rather than the material sets the boundary conditions.</p>
-      </article>
-      <article class="cfm-card">
-        <p class="cfm-card__eyebrow">Why this geometry</p>
-        <h3 class="cfm-card__title">Chosen, not tuned</h3>
-        <p class="cfm-card__body">Three independent arguments give the same three-turn answer: scale coverage, the order-12 tetrahedral rotation group, and the winding number of a C₃ axis. The specification is geometrically determined, and the prototype will test whether that holds.</p>
       </article>
       <article class="cfm-card">
         <p class="cfm-card__eyebrow">Arrays</p>
@@ -169,29 +139,7 @@
   </div>
 </section>
 
-<section id="testing">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">How we will know</p>
-      <h2>Independent measurements</h2>
-      <p>A claim that the cavity modifies the zero-point field has to survive more than one kind of instrument. Each of these could fail on its own.</p>
-    </div>
-    <div class="grid g2">
-      <article class="cfm-card">
-        <p class="cfm-card__eyebrow">Measurement 1</p>
-        <h3 class="cfm-card__title">Spectral emission</h3>
-        <p class="cfm-card__body">A calibrated photodetector or bolometer compares the cavity’s spectral radiance, from microwave to near-infrared, with a thermal reference at the same temperature. A departure from Planck’s law that geometry cannot explain would be evidence.</p>
-      </article>
-      <article class="cfm-card">
-        <p class="cfm-card__eyebrow">Measurement 2</p>
-        <h3 class="cfm-card__title">Interferometry</h3>
-        <p class="cfm-card__body">A Mach–Zehnder or Fabry–Pérot interferometer compares a beam through the cavity with a reference beam through free space, looking for a change in effective refractive index from altered mode density.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="band-alt" id="uses">
+<section id="uses">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Applications</p>
@@ -206,7 +154,7 @@
   </div>
 </section>
 
-<section id="roadmap">
+<section class="band-alt" id="roadmap">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Status</p>
@@ -276,7 +224,7 @@
     <div class="row">
       <a class="brand-lockup" href="#top"><img src="assets/cfm-mark-reversed.png" alt="" width="36" height="41"><span>CFM.energy</span></a>
       <nav aria-label="Footer" class="foot-nav" style="display:flex;gap:24px;flex-wrap:wrap">
-        <a href="#physics">The physics</a><a href="#device">The device</a><a href="#testing">Testing</a><a href="#roadmap">Status</a><a href="#integrity">Integrity</a>
+        <a href="#physics">The physics</a><a href="#device">The device</a><a href="#roadmap">Status</a><a href="#integrity">Integrity</a>
       </nav>
     </div>
     <p>CFM.energy describes a research programme based on theoretical concepts. UK patent application GB2609810.3: patent pending. Statements about energy output, performance and applications are hypotheses and design targets until validated by independent measurement. Nothing on this site is an offer of securities or a forecast of returns.</p>
