@@ -8,4 +8,4 @@ Static one-page site for CFM.energy, built on the CFM.energy design system (toke
 - `assets/` – logo marks
 
 Open `index.html` in a browser, or serve the folder from any static host.
-Before launch: confirm the contact address in the `#contact` section.
+Hosted on GitHub Pages from `main` (root) at cfm.energy; see `CNAME`.
