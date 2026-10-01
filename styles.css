@@ -147,3 +147,7 @@ tbody th[scope=row]{background:none;text-transform:none;letter-spacing:0;font:40
 .hero .mark{height:auto}
 .nav .cfm-btn{white-space:nowrap}
 @media (max-width:420px){.nav .cfm-btn{padding:var(--space-2) var(--space-3);font-size:14px}}
+.diagram--dark{background:var(--surface-deep);border-color:transparent}
+.diagram--dark figcaption{color:var(--ink-on-deep)}
+.timeline{grid-template-columns:repeat(3,1fr)}
+@media (max-width:760px){.timeline{grid-template-columns:1fr}}
